@@ -1,0 +1,125 @@
+.contact-container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    padding-inline: 50px;
+    padding-bottom: 150px;
+    background: #020617;
+    align-items: center;
+    justify-content: space-between;
+}
+.show-form { animation: translateRight .6s linear forwards; }
+.show-details { animation: translateLeft .6s linear forwards; }
+
+@keyframes translateRight {
+    0% { transform: translateX(25px); opacity: 0; }
+    100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes translateLeft {
+    0% { transform: translateX(-25px); opacity: 0; }
+    100% { transform: translateX(0px); opacity: 1; }
+}
+
+.my-details {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform: translateX(-25px);
+}
+
+.intro {
+    font-size: 16px;
+    border-left: 3px solid #3b82f6;
+    padding-left: 10px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #94a3b8;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(59, 130, 246, 0.1); 
+    border: 1px solid #3b82f6; 
+    border-radius: 8px;
+    font-size: 24px;
+    color: #3b82f6; 
+    flex-shrink: 0;
+    margin-top: 5px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-item:hover .icon {
+    background: #3b82f6;
+    color: #ffffff; 
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #3b82f6; 
+}
+
+.contact-info span {
+    font-size: 16px;
+    color: #f1f5f9;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(25px);
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        padding-bottom: 120px;
+        gap: 40px;
+    }
+    .my-details, .contact-form { width: 100%; padding: 30px; }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-container { padding-inline: 15px; padding-bottom: 200px; }
+    .contact-container .my-details, 
+    .contact-container .contact-form{
+        width: 100%; 
+        padding: 10px;
+    }
+    .intro{ font-size: 13px; text-align: justify; }
+    .contact-info span{ font-size: 13px; }
+    .contact-item { flex-direction: row; text-align: left; }
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Cause:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Geom:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&family=BBH+Bogle&family=Berkshire+Swash&family=Cause:wght@100..900&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Geom:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Luckiest+Guy&family=Momo+Trust+Display&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sekuya&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 35px;
+    margin-top: 20px;
+    padding: 8px 25px; 
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .3s ease;
+    z-index: 1;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+}
+
+.logo:active {
+    transform: scale(0.95);
+}
+
+.logo span{
+   font-family: 'Permanent Marker', 'BBH Bogle', 'Cause', 'Courgette', 'DM Sans', sans-serif;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #f8fafc;
+    font-weight: 800;
+    font-family: 'Permanent Marker', 'BBH Bogle', 'Cause', 'Courgette', 'DM Sans', sans-serif;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 34px;
+    padding-left: 3px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-right: 4px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    color: #020617;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #94a3b8;
+}
+
+.nav-links ul li { 
+    font-size: 16px;
+    position: relative; 
+    transition: all .3s ease; 
+    font-family: 'Raleway', 'Poppins', 'Quicksand', 'Ubuntu', 'Roboto', sans-serif;
+}
+
+.nav-links ul li:hover { 
+    color: #38bdf8;
+    transform: translateY(-2px); 
+}
+.nav-links ul li:active { transform: scale(0.85); }
+.nav-links ul li::before {
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    transition: all .3s ease;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
+.nav-links ul li:hover::before {width: 100%; }
+
+.contact-btn {
+    padding: 10px 22px;
+    border-radius: 23px;
+    font-weight: bold;
+    background: transparent;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.5);
+    transition: all .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.contact-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    transform: scale(1.04);
+}
+.contact-btn:active {transform: scale(0.85);}
+
+
+@media only screen and (max-width: 971px){
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 16px;
+        border-radius: 20px;
+    }
+    .logo { align-self: flex-start; }
+    .contact-btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .nav-links { margin-left: 35px; }
+}
+
+@media only screen and (max-width: 590px){
+    .navbar-container { padding: 0px; }
+    .navbar { 
+        margin-top: 0px; 
+        border-radius: 0px;
+        width: 100%; 
+        gap: 9px;
+        border-left: none;
+        border-right: none;
+    }
+    .logo { margin-left: 0px; font-size: 12px; }
+    .contact-btn { 
+        right: 10px; 
+        top: 30%;
+        transform: translateY(-50%);
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .nav-links ul{
+        margin-right: 40px;
+        gap: 19px;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 448px) { 
+    .navbar { padding: 15px 10px; }
+    .nav-links {
+        align-self: center; 
+        margin-top: 15px;   
+        margin-left: 0px;   
+        width: 100%;        
+    }
+    .nav-links ul { 
+        gap: 12px;          
+        justify-content: center; 
+        margin-right: 0px;  
+    }
+    .nav-links ul li { font-size: 13px; font-weight: 500; }
+}
