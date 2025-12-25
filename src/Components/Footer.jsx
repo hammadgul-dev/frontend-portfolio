@@ -15,7 +15,6 @@ function Footer() {
         <div className={style["social-links"]}>
             <span onClick={() => window.open("https://www.linkedin.com/in/hammadgul-dev/", "_blank")}><FaLinkedinIn /></span>
             <span onClick={() => window.open("https://github.com/hammadgul-dev", "_blank")}><IoLogoGithub /></span>
-            <span onClick={() => window.open("https://www.instagram.com/imhammad148/", "_blank")}><FaInstagram /></span>
             <span onClick={() => window.open("mailto:hammadgul140413@gmail.com")}><IoMdMail /></span>
         </div>
 
